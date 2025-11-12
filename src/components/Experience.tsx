@@ -4,7 +4,7 @@ export default function Experience() {
   const experiences = [
     {
       icon: Briefcase,
-      title: 'Software Development Intern',
+      title: 'Backend Software Developer',
       company: 'DHS Africa',
       period: 'Sep 2025 – Present',
       description: [
