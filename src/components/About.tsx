@@ -18,7 +18,7 @@ export default function About() {
                 <div className="space-y-2">
                   <p className="text-lg font-semibold text-slate-800 dark:text-slate-200">Chuka University</p>
                   <p className="text-slate-600 dark:text-slate-300">Bachelor of Science in Computer Science</p>
-                  <p className="text-slate-500 dark:text-slate-400">Completed: April 2024</p>
+                  <p className="text-slate-500 dark:text-slate-400">Completed: April 2025</p>
                   <p className="text-slate-600 dark:text-slate-300">Chuka, Kenya</p>
                 </div>
               </div>
