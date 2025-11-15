@@ -1,6 +1,9 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'];
+  --dark-mode: 'class';
+}
 
 @layer base {
   html {
@@ -19,4 +22,72 @@
       linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
     background-size: 50px 50px;
   }
+}
+
+/* Blue Theme Overrides */
+.blue-theme .text-cyan-400,
+.blue-theme .dark\:text-cyan-400,
+.blue-theme .text-blue-600,
+.blue-theme .dark\:text-cyan-400 {
+  color: #3b82f6 !important;
+}
+
+.blue-theme .bg-cyan-600,
+.blue-theme .bg-blue-600 {
+  background-color: #3b82f6 !important;
+}
+
+.blue-theme .hover\:text-cyan-400:hover,
+.blue-theme .hover\:text-blue-600:hover {
+  color: #3b82f6 !important;
+}
+
+.blue-theme .from-blue-400 {
+  --tw-gradient-from: #60a5fa !important;
+}
+
+.blue-theme .to-cyan-400 {
+  --tw-gradient-to: #3b82f6 !important;
+}
+
+.blue-theme .from-blue-600 {
+  --tw-gradient-from: #2563eb !important;
+}
+
+.blue-theme .to-cyan-600 {
+  --tw-gradient-to: #0891b2 !important;
+}
+
+/* Green Theme Overrides */
+.green-theme .text-cyan-400,
+.green-theme .dark\:text-cyan-400,
+.green-theme .text-blue-600,
+.green-theme .dark\:text-cyan-400 {
+  color: #22c55e !important;
+}
+
+.green-theme .bg-cyan-600,
+.green-theme .bg-blue-600 {
+  background-color: #22c55e !important;
+}
+
+.green-theme .hover\:text-cyan-400:hover,
+.green-theme .hover\:text-blue-600:hover {
+  color: #22c55e !important;
+}
+
+.green-theme .from-blue-400 {
+  --tw-gradient-from: #4ade80 !important;
+}
+
+.green-theme .to-cyan-400 {
+  --tw-gradient-to: #22c55e !important;
+}
+
+.green-theme .from-blue-600 {
+  --tw-gradient-from: #16a34a !important;
+}
+
+.green-theme .to-cyan-600 {
+  --tw-gradient-to: #15803d !important;
 }
